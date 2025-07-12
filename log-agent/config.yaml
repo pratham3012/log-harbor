@@ -1,0 +1,15 @@
+# LogHarbor Agent Configuration
+kafka:
+  bootstrap_servers: "localhost:9092"
+  topic: "logs"
+  client_id: "log-agent"
+  acks: "all"
+  retries: 3
+
+service:
+  name: "log-agent"
+  log_interval: "2s"
+
+logging:
+  level: "info"
+  format: "json" 
